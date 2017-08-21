@@ -7,15 +7,15 @@ xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200)
         {
             data = JSON.parse(xhr.responseText).data;
-            console.log(data);
+            console.log(data.length);
 
             d3.select("#chart")
               .selectAll("div")
               .data(data)
               .enter()
-              .append("div")
-              .style("height", function(d) { return d[1]+"px"})
-              .style("width", "1px")
+              .append("svg")
+              .style("height", function(d) { return (d[1]/10) +"px"})
+              .style("width", function (data) { return (data.length) + "vw"});
         }
 }
 
