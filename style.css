@@ -1,0 +1,10 @@
+#chart {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; 
+}
+
+#chart div {
+    background-color: blue;
+
+}
