@@ -1,17 +1,26 @@
+#title {
+    height: 10vh;
+}
+
 #chart {
     display: flex;
     flex-direction: row;
     align-items: baseline; 
     border-bottom: 2px solid black;
     border-left: 2px solid black;
+
 }
 
-#chart svg {
+rect {
     background-color: blue;
 
 }
 
-#chart svg:hover {
+rect:hover {
     background-color: lightblue;
 
+}
+
+#description {
+    height: 10vh;
 }
